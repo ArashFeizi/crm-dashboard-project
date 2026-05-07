@@ -1,0 +1,102 @@
+/* ========================================
+   RESET CSS
+   ======================================== */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Image defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Remove default input styles */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* Set default table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Remove default quotes */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Set default heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Set default hr */
+hr {
+  border: none;
+  background: var(--border);
+  height: 1px;
+  margin: var(--space-4) 0;
+}

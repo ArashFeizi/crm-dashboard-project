@@ -1,0 +1,84 @@
+/* ========================================
+   COMPONENTS (مینیمال - فقط ضروری‌ها)
+   ======================================== */
+
+/* کارت */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.card--hover:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card--padding-sm {
+  padding: 12px;
+}
+.card--padding-lg {
+  padding: 24px;
+}
+
+/* دکمه */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn--primary {
+  background: var(--accent);
+  color: white;
+}
+.btn--primary:hover {
+  background: var(--accent-dark);
+}
+.btn--secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* نشانگر وضعیت */
+.badge {
+  display: inline-flex;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.badge--success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+.badge--warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+.badge--error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+/* جدول */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th {
+  text-align: right;
+  padding: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}

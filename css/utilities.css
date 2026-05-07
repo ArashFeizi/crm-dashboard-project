@@ -1,0 +1,114 @@
+/* ========================================
+   UTILITIES (مینیمال - فقط کلاس‌های پرکاربرد)
+   ======================================== */
+
+/* چیدمان - Flex */
+.u-flex {
+  display: flex;
+}
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.u-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.u-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* چیدمان - Grid */
+.u-grid {
+  display: grid;
+}
+.u-grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.u-grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* فاصله‌ها (gap) */
+.u-gap-1 {
+  gap: 4px;
+}
+.u-gap-2 {
+  gap: 8px;
+}
+.u-gap-3 {
+  gap: 12px;
+}
+.u-gap-4 {
+  gap: 16px;
+}
+
+/* فاصله داخلی (padding) */
+.u-p-2 {
+  padding: 8px;
+}
+.u-p-3 {
+  padding: 12px;
+}
+.u-p-4 {
+  padding: 16px;
+}
+
+/* فاصله خارجی (margin) */
+.u-m-0 {
+  margin: 0;
+}
+.u-mb-1 {
+  margin-bottom: 4px;
+}
+.u-mb-2 {
+  margin-bottom: 8px;
+}
+.u-mb-3 {
+  margin-bottom: 12px;
+}
+.u-mb-4 {
+  margin-bottom: 16px;
+}
+
+/* متن */
+.u-text-center {
+  text-align: center;
+}
+.u-text-right {
+  text-align: right;
+}
+.u-text-left {
+  text-align: left;
+}
+.u-text-muted {
+  color: var(--muted);
+}
+
+/* عرض */
+.u-w-full {
+  width: 100%;
+}
+
+/* پس‌زمینه */
+.u-bg-surface {
+  background: var(--surface);
+}
+
+/* گردی گوشه */
+.u-rounded-md {
+  border-radius: 8px;
+}
+.u-rounded-lg {
+  border-radius: 12px;
+}
+
+/* مخفی کردن */
+.u-hidden {
+  display: none;
+}

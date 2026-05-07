@@ -1,0 +1,50 @@
+/* ========================================
+   GLOBAL STYLES (مینیمال - فقط ضروری‌ها)
+   ======================================== */
+
+/* جهت صفحه و بدنه اصلی */
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+/* اسکرول بار (اختیاری) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 8px;
+}
+
+/* لینک‌ها */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* دکمه */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* اینپوت */
+input,
+textarea,
+select {
+  font-family: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
