@@ -1,272 +1,273 @@
-:root{
-  --surface:#fff;
-  --surface-dark:#f4f4f4;
-  --border:#e5e7eb;
-  --text:#111827;
-  --text-light:#6b7280;
-  --accent:#4f46e5;
+:root {
 }
 
-html{
+:root {
+  --font-primary: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+html {
   direction: ltr;
 }
 
-      /* Block: Modal */
-      .task-modal {
-        /* position: fixed; */
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-      }
+/* Block: Modal */
+.task-modal {
+  /* position: fixed; */
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 
+.task-modal__dialog {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  border: 1px solid #eef0f2;
+}
 
-      .task-modal__dialog {
-        position: relative;
-        background: #ffffff;
-        width: 100%;
-        max-width: 500px;
-        border-radius: 12px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        padding: 0;
-        border: 1px solid #eef0f2;
-      }
+/* Header */
+.task-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f3f5;
+}
 
-      /* Header */
-      .task-modal__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 24px;
-        border-bottom: 1px solid #f1f3f5;
-      }
+.task-modal__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1d23;
+}
 
-      .task-modal__title {
-        margin: 0;
-        font-size: 16px;
-        font-weight: 600;
-        color: #1a1d23;
-      }
+.task-modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 4px;
+}
 
-      .task-modal__close {
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #9ca3af;
-        padding: 4px;
-      }
+/* Body */
+.task-modal__body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-      /* Body */
-      .task-modal__body {
-        padding: 20px 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-      }
+.task-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-      .task-modal__field {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
+.task-modal__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
 
-      .task-modal__label {
-        font-size: 13px;
-        font-weight: 500;
-        color: #374151;
-      }
+.task-modal__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+}
 
-      .task-modal__input {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px 12px;
-        border: 1px solid #e5e7eb;
-        border-radius: 6px;
-        font-size: 14px;
-        color: #1f2937;
-      }
+.task-modal__input::placeholder {
+  color: #d1d5db;
+}
 
-      .task-modal__input::placeholder {
-        color: #d1d5db;
-      }
+/* Row Layout */
+.task-modal__row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
 
-      /* Row Layout */
-      .task-modal__row {
-        display: flex;
-        gap: 24px;
-        align-items: flex-start;
-      }
+.task-modal__action-group {
+  display: flex;
+  gap: 32px;
+}
 
-      .task-modal__action-group {
-        display: flex;
-        gap: 32px;
-      }
+.task-modal__action-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
 
-      .task-modal__action-item {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        align-items: center;
-      }
+.task-modal__circle-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #374151;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-      .task-modal__circle-btn {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        border: 1px solid #374151;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-      }
+/* Date Field Wrapper */
+.task-modal__date-wrapper {
+  position: relative;
+  flex: 1;
+}
 
-      /* Date Field Wrapper */
-      .task-modal__date-wrapper {
-        position: relative;
-        flex: 1;
-      }
+.task-modal__date-input {
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+  cursor: pointer;
+}
 
-      .task-modal__date-input {
-        padding-left: 36px !important;
-        padding-right: 36px !important;
-        cursor: pointer;
-      }
+.task-modal__icon-left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
 
-      .task-modal__icon-left {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #9ca3af;
-      }
+.task-modal__icon-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
 
-      .task-modal__icon-right {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #9ca3af;
-      }
+/* Textarea */
+.task-modal__textarea-wrapper {
+  position: relative;
+}
 
-      /* Textarea */
-      .task-modal__textarea-wrapper {
-        position: relative;
-      }
+.task-modal__textarea {
+  min-height: 100px;
+  resize: none;
+}
 
-      .task-modal__textarea {
-        min-height: 100px;
-        resize: none;
-      }
+.task-modal__counter {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 11px;
+  color: #d1d5db;
+}
 
-      .task-modal__counter {
-        position: absolute;
-        bottom: 8px;
-        right: 12px;
-        font-size: 11px;
-        color: #d1d5db;
-      }
+/* Checklist */
+.task-modal__checklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
 
-      /* Checklist */
-      .task-modal__checklist-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 8px;
-      }
+.task-modal__checklist-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-      .task-modal__checklist-actions {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
+.task-modal__delete-link {
+  font-size: 11px;
+  color: #9ca3af;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-      .task-modal__delete-link {
-        font-size: 11px;
-        color: #9ca3af;
-        text-decoration: none;
-        cursor: pointer;
-      }
+.task-modal__add-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-      .task-modal__add-btn {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        padding: 4px 10px;
-        border: 1px solid #374151;
-        border-radius: 6px;
-        background: #fff;
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-      }
+.task-modal__checkbox-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-      .task-modal__checkbox-group {
-        margin-top: 12px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
+.task-modal__checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #d1d5db;
+}
 
-      .task-modal__checkbox-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 14px;
-        color: #d1d5db;
-      }
+.task-modal__checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
 
-      .task-modal__checkbox {
-        width: 16px;
-        height: 16px;
-        border: 1px solid #d1d5db;
-        border-radius: 4px;
-      }
+/* Dropzone */
+.task-modal__dropzone {
+  border: 1.5px dashed #9ca3af;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
 
-      /* Dropzone */
-      .task-modal__dropzone {
-        border: 1.5px dashed #9ca3af;
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
-        cursor: pointer;
-      }
+.task-modal__dropzone-text {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #d1d5db;
+}
 
-      .task-modal__dropzone-text {
-        margin-top: 8px;
-        font-size: 13px;
-        color: #d1d5db;
-      }
+.task-modal__dropzone-highlight {
+  color: #d1d5db;
+  text-decoration: underline;
+}
 
-      .task-modal__dropzone-highlight {
-        color: #d1d5db;
-        text-decoration: underline;
-      }
+/* Footer */
+.task-modal__footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 24px 24px;
+}
 
-      /* Footer */
-      .task-modal__footer {
-        display: flex;
-        gap: 12px;
-        padding: 16px 24px 24px;
-      }
+.task-modal__btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
 
-      .task-modal__btn {
-        flex: 1;
-        padding: 12px;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        border: none;
-      }
+.task-modal__btn--cancel {
+  background: #f3f4f6;
+  color: #1f2937;
+}
 
-      .task-modal__btn--cancel {
-        background: #f3f4f6;
-        color: #1f2937;
-      }
-
-      .task-modal__btn--save {
-        background: #000000;
-        color: #ffffff;
-      }
+.task-modal__btn--save {
+  background: #000000;
+  color: #ffffff;
+}
