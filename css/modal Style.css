@@ -1,14 +1,12 @@
 :root {
-  --surface: var(--wihte);
-  --bg: #f8edee;
+  --surface: #fff;
   --surface-dark: #f4f4f4;
   --border: #e5e7eb;
   --text: #111827;
   --text-light: #6b7280;
   --accent: #4f46e5;
-  --border: #e5e7eb;
-  --border-dark: #d1d5db;
 
+  --text-primary: var(--text);
   --font-primary: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -22,12 +20,13 @@ html {
 
 /* Block: Modal  container*/
 .task-modal {
-  /* position: fixed; */
+  position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  border-radius: 8px;
 }
 
 /* modal dialog */
@@ -39,7 +38,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   padding: 0;
-  border: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-dark, rgba(228, 228, 228, 1));
 }
 
 /* Header */
@@ -54,15 +53,15 @@ html {
 .task-modal__title {
   margin: 0;
   font-size: 16px;
-  font-weight: 600;
-  color: #1a1d23;
+  font-weight: 500;
+  color: var(--text);
 }
 
 .task-modal__close {
   background: none;
   border: none;
   cursor: pointer;
-  color: #9ca3af;
+  color: var(--text);
   padding: 4px;
 }
 
