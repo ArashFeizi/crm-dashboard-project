@@ -1,7 +1,14 @@
 :root {
-}
+  --surface: var(--wihte);
+  --bg: #f8edee;
+  --surface-dark: #f4f4f4;
+  --border: #e5e7eb;
+  --text: #111827;
+  --text-light: #6b7280;
+  --accent: #4f46e5;
+  --border: #e5e7eb;
+  --border-dark: #d1d5db;
 
-:root {
   --font-primary: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -13,7 +20,7 @@ html {
   direction: ltr;
 }
 
-/* Block: Modal */
+/* Block: Modal  container*/
 .task-modal {
   /* position: fixed; */
   inset: 0;
@@ -23,15 +30,16 @@ html {
   z-index: 1000;
 }
 
+/* modal dialog */
 .task-modal__dialog {
   position: relative;
-  background: #ffffff;
+  background: var(--surface);
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   padding: 0;
-  border: 1px solid #eef0f2;
+  border: 1px solid var(--border);
 }
 
 /* Header */
