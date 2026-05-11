@@ -1,3 +1,23 @@
-.arash {
-  background-color: black;
+/* arash task-page start  */
+html,
+body {
+  height: 100%;
+  background-color: var(--surface);
 }
+.main {
+  height: 100%;
+  border: var(--border-dark);
+  grid-template-columns: 260px 1fr;
+}
+.sidebar {
+  height: 100%;
+  border: var(--border-dark);
+  width: 100%;
+  background-color: rgba(249, 249, 249, 1);
+  padding: var(--space-7);
+}
+.content {
+  height: 100%;
+  border: var(--border-dark);
+}
+/* end task-page end */
