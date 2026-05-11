@@ -1,0 +1,142 @@
+/* html{
+    font-size: 62.5%;
+} */
+ body{
+    background-color: #fff;
+    font-size: 1.5rem;
+
+ }
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    flex: 1;
+}
+
+:root{
+    --sidebar: #F9F9F9;
+    --border: #E4E4E4;
+    --background-icon: #F2F2F2;
+}
+
+/* SIDE BAR */
+.sidebar{
+    background-color: var(--sidebar);
+    color: var(--text-muted);
+    width: 250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sidebar__header{
+    border-bottom: solid var(--border) 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    padding-right: 0;
+    font-size: 2.2rem;
+    color: black;
+}
+.sidebar__icon-bgc{
+    background-color: var(--background-icon);
+    display: flex;
+    align-items: center;
+}
+.sidebar__items{
+    padding: 1.5rem;
+    border-bottom: solid var(--border) 1px;
+}
+.sidebar__item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 1rem;
+}
+.icons{
+    color: #AFAFAF;
+}
+.sidebar__icon{
+    width: 15px;
+    height: 15px;
+}
+.third__slidebar{
+    flex: 1;
+}
+.sidebar__footer{
+    padding: 2.5rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.sidebar__detail{
+    flex: 1;
+}
+.sidebar__icons{
+    display: flex;
+    flex-direction: column;
+}
+/* BORDER HEADER */
+/* .content .border-header{
+    border-bottom: solid var(--border) 1px;
+    padding: 0;
+} */
+
+/* CONTENT */
+.content{
+    /* padding: 2.5rem 2rem 5rem; */
+}
+/* header content */
+.content__head{
+    display: flex;
+    /* eslah shavad */
+    padding: 2.5rem 2rem 1.8rem;
+    border-bottom: solid var(--border) 1px;
+
+}
+
+.head__search{
+    flex: 1;
+}
+
+/* CATEGORY */
+.conten__category{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+    border-bottom: solid var(--border) 1px;
+
+}
+.category__items{
+    display: flex;
+    gap: 3.6rem;
+}
+.category__item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.category__item:first-child{
+    font-size: var(--fs-3xl);
+}
+.category__filter{
+    display: flex;
+    gap: 1.4rem;
+}
+.filter__item{
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    gap: 8px;
+}
+.filter__item.black{
+    background-color: #000;
+    color: #fff;
+}
+.category__item.border{
+    border-left: solid var(--border) 1px;
+}
