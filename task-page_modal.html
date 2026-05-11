@@ -1,230 +1,333 @@
+
+
+
+
 <!doctype html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Create New Task - Modal</title>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Basic meta settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/modal Style.css" />
+  <!-- Page title -->
+  <title>Create New Task - Modal</title>
 
-    <link rel="stylesheet" href="css/responsive.css" />
-  </head>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/modal Style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
 
 
-  <body>
+<!-- Task Modal Component Start -->
 
-    <section class="task-modal">
-   
-      <div class="task-modal__dialog">
-        <!-- Header -->
-        <header class="task-modal__header">
-          <h2 class="task-modal__title">Create New Task</h2>
-          <button class="task-modal__close" type="button" aria-label="Close">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M18 6L6 18M6 6l12 12" />
-            </svg>
-          </button>
-        </header>
+<section class="task-modal">
 
-        <!-- Body -->
-        <form action="#">
-          <div class="task-modal__body">
-            <!-- Task Title -->
-            <div class="task-modal__field">
-              <label class="task-modal__label">Task Title</label>
-              <input
-                type="text"
-                class="task-modal__input"
-                placeholder="Enter task name here"
-              />
-            </div>
+  <!-- Background overlay (dark layer behind modal) -->
+  <div class="task-modal__overlay"></div>
 
-            <!-- Members, Labels, Date -->
-            <div class="task-modal__row">
-              <div class="task-modal__action-group">
-                <div class="task-modal__action-item">
-                  <label class="task-modal__label">Add Members</label>
-                  <button type="button" class="task-modal__circle-btn">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                      <circle cx="8.5" cy="7" r="4" />
-                      <line x1="20" y1="8" x2="20" y2="14" />
-                      <line x1="23" y1="11" x2="17" y2="11" />
-                    </svg>
-                  </button>
-                </div>
-                <div class="task-modal__action-item">
-                  <label class="task-modal__label">Add Labels</label>
-                  <button type="button" class="task-modal__circle-btn">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
-                      />
-                      <line x1="7" y1="7" x2="7.01" y2="7" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+  <!-- Modal content container -->
+  <div class="task-modal__content">
 
-              <div class="task-modal__field" style="flex: 1">
-                <label class="task-modal__label">Due Date</label>
-                <div class="task-modal__date-wrapper">
-                  <span class="task-modal__icon-left">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>
-                  </span>
-                  <input
-                    type="text"
-                    class="task-modal__input task-modal__date-input"
-                    placeholder="Select Date"
-                    readonly
-                  />
-                  <span class="task-modal__icon-right">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
+<!-- Modal Header  -->
+<header class="task-modal__header">
 
-            <!-- Description -->
-            <div class="task-modal__field">
-              <label class="task-modal__label">Description</label>
-              <div class="task-modal__textarea-wrapper">
-                <textarea
-                  class="task-modal__input task-modal__textarea"
-                  placeholder="Enter your description here"
-                ></textarea>
-                <span class="task-modal__counter">0/50</span>
-              </div>
-            </div>
+<!-- Modal Title -->
+<h2 class="task-modal__title">
+Create New Task
+</h2>
 
-            <!-- Checklist -->
-            <div class="task-modal__checklist">
-              <div class="task-modal__checklist-header">
-                <label class="task-modal__label">Task Checklist</label>
-                <div class="task-modal__checklist-actions">
-                  <span class="task-modal__delete-link">Delete</span>
-                  <button type="button" class="task-modal__add-btn">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    >
-                      <line x1="12" y1="5" x2="12" y2="19" />
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                    Add Item
-                  </button>
-                </div>
-              </div>
-              <input
-                type="text"
-                class="task-modal__input"
-                placeholder="Enter checklist name here"
-              />
+<!-- Close button -->
+<button class="task-modal__close">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M18 6L6 18M6 6l12 12"/>
+</svg>
+</button>
 
-              <div class="task-modal__checkbox-group">
-                <div class="task-modal__checkbox-item">
-                  <input type="checkbox" class="task-modal__checkbox" /> Type
-                  here
-                </div>
-                <div class="task-modal__checkbox-item">
-                  <input type="checkbox" class="task-modal__checkbox" /> Type
-                  here
-                </div>
-                <div class="task-modal__checkbox-item">
-                  <input type="checkbox" class="task-modal__checkbox" /> Type
-                  here
-                </div>
-              </div>
-            </div>
+</header>
 
-            <!-- Attachment -->
-            <div class="task-modal__field">
-              <label class="task-modal__label">Attachment</label>
-              <div class="task-modal__dropzone">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#d1d5db"
-                  stroke-width="1.5"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <path d="M21 15l-5-5L5 21" />
-                </svg>
-                <div class="task-modal__dropzone-text">
-                  Drag files here or
-                  <span class="task-modal__dropzone-highlight">Browse</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Footer -->
-          <footer class="task-modal__footer">
-            <button
-              type="button"
-              class="task-modal__btn task-modal__btn--cancel"
-            >
-              Cancel
-            </button>
-            <button type="submit" class="task-modal__btn task-modal__btn--save">
-              Save
-            </button>
-          </footer>
-        </form>
-      </div>
-    </section>
-  </body>
+ <!-- Task Form Start -->
+<form class="task-modal__form">
+
+<!-- Modal body -->
+<div class="task-modal__body">
+
+
+<!-- Task Title Field -->
+
+<div class="task-modal__field">
+
+<label class="task-modal__label">
+Task Title
+</label>
+
+<!-- Task title input -->
+<input
+type="text"
+class="task-modal__input"
+placeholder="Enter task name here"
+>
+
+</div>
+
+
+<!-- Members + Labels + Due Date Row -->
+
+<div class="task-modal__row">
+
+<!-- Action buttons group -->
+<div class="task-modal__action-group">
+
+<!-- Add Members -->
+<div class="task-modal__action-item">
+
+<label class="task-modal__label">
+Add Members
+</label>
+
+<button class="task-modal__icon-btn">
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+<circle cx="8.5" cy="7" r="4"/>
+<line x1="20" y1="8" x2="20" y2="14"/>
+<line x1="23" y1="11" x2="17" y2="11"/>
+</svg>
+
+</button>
+
+</div>
+
+
+<!-- Add Labels -->
+<div class="task-modal__action-item">
+
+<label class="task-modal__label">
+Add Labels
+</label>
+
+<button class="task-modal__icon-btn">
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+<line x1="7" y1="7" x2="7.01" y2="7"/>
+</svg>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Due Date Field -->
+
+<div class="task-modal__field task-modal__field--date">
+
+<label class="task-modal__label">
+Due Date
+</label>
+
+<!-- Date input wrapper -->
+<div class="task-modal__date-wrapper">
+
+<!-- Calendar icon -->
+<span class="task-modal__icon-left">
+
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="3" y="4" width="18" height="18" rx="2"/>
+<line x1="16" y1="2" x2="16" y2="6"/>
+<line x1="8" y1="2" x2="8" y2="6"/>
+<line x1="3" y1="10" x2="21" y2="10"/>
+</svg>
+
+</span>
+
+<!-- Date input -->
+<input
+class="task-modal__input task-modal__date-input"
+placeholder="Select Date"
+readonly
+>
+
+<!-- Dropdown arrow -->
+<span class="task-modal__icon-right">
+
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M6 9l6 6 6-6"/>
+</svg>
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Description Field -->
+
+<div class="task-modal__field">
+
+<label class="task-modal__label">
+Description
+</label>
+
+<!-- Textarea wrapper -->
+<div class="task-modal__textarea-wrapper">
+
+<!-- Task description textarea -->
+<textarea
+class="task-modal__input task-modal__textarea"
+placeholder="Enter your description here"
+></textarea>
+
+<!-- Character counter -->
+<span class="task-modal__counter">
+0/50
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Checklist Section -->
+
+<div class="task-modal__checklist">
+
+<!-- Checklist header -->
+<div class="task-modal__checklist-header">
+
+<label class="task-modal__label">
+Task Checklist
+</label>
+
+<!-- Checklist actions -->
+<div class="task-modal__checklist-actions">
+
+<!-- Delete checklist -->
+<button class="task-modal__delete-link">
+Delete
+</button>
+
+<!-- Add checklist item -->
+<button class="task-modal__add-btn">
+
+<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+<line x1="12" y1="5" x2="12" y2="19"/>
+<line x1="5" y1="12" x2="19" y2="12"/>
+</svg>
+
+Add Item
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Checklist title  -->
+<input
+class="task-modal__input"
+placeholder="Enter checklist name here"
+>
+
+
+<!-- Checklist items -->
+<div class="task-modal__checkbox-group">
+
+<label class="task-modal__checkbox-item">
+<input type="checkbox">
+<span>Type here</span>
+</label>
+
+<label class="task-modal__checkbox-item">
+<input type="checkbox">
+<span>Type here</span>
+</label>
+
+<label class="task-modal__checkbox-item">
+<input type="checkbox">
+<span>Type here</span>
+</label>
+
+</div>
+
+</div>
+
+
+
+
+ <!-- Attachment Upload Section  -->
+
+<div class="task-modal__field">
+
+<label class="task-modal__label">
+Attachment
+</label>
+
+<!-- Upload area -->
+<div class="task-modal__attachment-area">
+
+<!-- Upload icon -->
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="1.5">
+<rect x="3" y="3" width="18" height="18" rx="2"/>
+<circle cx="8.5" cy="8.5" r="1.5"/>
+<path d="M21 15l-5-5L5 21"/>
+</svg>
+
+<!-- Upload  -->
+<p class="task-modal__attachment">
+Drag files here or Browse
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Modal Footer  -->
+
+<footer class="task-modal__footer">
+
+<!-- Cancel button -->
+<button type="button" class="task-modal__btn task-modal__btn--cancel">
+Cancel
+</button>
+
+<!-- Save button -->
+<button type="submit" class="task-modal__btn task-modal__btn--save">
+Save
+</button>
+
+</footer>
+
+</form>
+ <!-- Task Form End  -->
+
+  </div>
+
+</section>
+
+
+</body>
 </html>
