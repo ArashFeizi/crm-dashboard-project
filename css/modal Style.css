@@ -10,6 +10,10 @@
   --text-light: #727272;
 }
 
+html {
+  direction: ltr;
+}
+
 /* Modal(Full Screen Layer) */
 
 .task-modal {
