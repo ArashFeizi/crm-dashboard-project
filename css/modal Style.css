@@ -1,0 +1,307 @@
+/* Modal Variables */
+
+:root {
+  --shadow-modal: 0 4px 36px rgba(0, 0, 0, 0.16);
+
+  --border-light: #afafaf;
+  --surface-light: #f2f2f2;
+
+  --text-dark: #000000;
+  --text-light: #727272;
+}
+
+html {
+  direction: ltr;
+}
+
+/* Modal(Full Screen Layer) */
+
+.task-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Background overlay  */
+.task-modal__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* Modal Container */
+
+.task-modal__content {
+  position: relative;
+  width: 640px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-modal);
+  overflow: hidden;
+}
+
+/* Modal Header */
+
+.task-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.task-modal__title {
+  font-size: 18px;
+  font-weight: var(--fw-medium);
+  color: var(--text);
+}
+
+/* Close  button */
+
+.task-modal__close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+/* Modal Body */
+
+.task-modal__body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+
+.task-modal__label {
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+/* Input Fields */
+
+.task-modal__input {
+  width: 100%;
+  height: 41px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  background: var(--surface);
+  box-sizing: border-box;
+  font-size: var(--fs-md);
+  margin-top: 10px;
+}
+
+/* Row  (Date + Icon Actions) */
+
+.task-modal__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.task-modal__action-group {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Icon with label  */
+.task-modal__action-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Icon Buttons */
+
+.task-modal__icon-btn {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: 1px solid var(--text-dark);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+/* Hover effect */
+.task-modal__icon-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Date Field */
+
+.task-modal__field--date {
+  width: 242px;
+}
+
+.task-modal__date-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Date input */
+.task-modal__date-input {
+  width: 100%;
+  height: 41px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+/* Left calendar icon */
+.task-modal__icon-left {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* Right dropdown arrow */
+.task-modal__icon-right {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* Description Textarea */
+
+.task-modal__textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  font-family: inherit;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.task-modal__textarea-wrapper {
+  position: relative;
+}
+
+.task-modal__counter {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Checklist Section */
+
+.task-modal__checklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-modal__checklist-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Delete checklist button */
+.task-modal__delete-link {
+  font-size: var(--fw-medium);
+  color: var(--text-light);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add checklist item button */
+.task-modal__add-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-sm);
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Checklist items */
+.task-modal__checkbox-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.task-modal__checkbox-item {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--border-light);
+  font-weight: var(--fs-md);
+}
+
+/* Attachment Area (File Upload) */
+
+.task-modal__attachment-area {
+  border: 1px dashed var(--text-dark);
+  border-radius: 10px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Footer Buttons */
+
+.task-modal__footer {
+  display: flex;
+  gap: 12px;
+  padding: 18px 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* Base button */
+.task-modal__btn {
+  flex: 1;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500px;
+  cursor: pointer;
+}
+
+/* Cancel button */
+.task-modal__btn--cancel {
+  background: var(--surface-light);
+  color: var(--text-dark);
+  font-size: 16px;
+}
+
+/* Save button */
+.task-modal__btn--save {
+  background: var(--text-dark);
+  color: var(--surface);
+}
