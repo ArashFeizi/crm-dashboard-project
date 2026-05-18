@@ -172,11 +172,11 @@ html{
   border: 1px solid var(--text);
   color: var(--text);
 }
-.btn--primary-dark{
+.btn--secondary-dark:hover{
   background: var(--text);
   color: white;
 }
-.contact__filters .btn--primary-dark .icon{
+.contact__filters .icon-plus{
     width: 14px;
     height: 14px;
 }
