@@ -49,13 +49,10 @@ html{
     height: 20px;
 }
 
-.sidebar__item span {
+.sidebar__item p{
     font-size: var(--fs-md);
-    font-weight: var(--fw-medium);
-    color: var(--text-muted);
-    display: inline-block;
 }
-.sidebar__item :hover{
+.sidebar__item:hover {
     color: var(--text);
     cursor: pointer;
 }
@@ -152,7 +149,7 @@ html{
 }
 .contact__search{
     border: 1px solid var(--border-dark);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     padding: var(--space-1) var(--space-5);
 }
 
@@ -179,4 +176,38 @@ html{
 .contact__filters .icon-plus{
     width: 14px;
     height: 14px;
+}
+
+/* 3== contact  nav */
+
+.contact__nav ,
+.contact__nav-list ,
+.contact__nav-item ,
+.contact__nav-icon{
+    align-items: center;
+}
+.contact__nav-item ,
+.contact__nav-label{
+    color: var(--text-muted);
+    padding:var(--space-2) var(--space-6) var(--space-6) var(--space-6);
+}
+.contact__nav-item p,
+.contact__nav-icon p{
+    font-size: var(--fs-md);
+}
+.contact__nav-icon{
+    color: var(--text-muted);
+}
+.contact__nav-item .badge{
+    color: var(--text);
+    background-color: var(--surface-dark);
+}
+.contact__nav-item:hover {
+    color: var(--text);
+    cursor: pointer;
+    border-bottom: 2px solid var(--text);
+}
+.contact__nav-item:hover .badge{
+    background: rgba(245, 11, 11, 0.1);
+    color: var(--error);
 }

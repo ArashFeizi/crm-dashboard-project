@@ -125,10 +125,67 @@
     <path d="M8.78077 1.8C9.02929 1.8 9.23076 2.00147 9.23076 2.25C9.23076 2.49853 9.02929 2.7 8.78076 2.7L1.21923 2.7C0.970698 2.7 0.769226 2.49853 0.769226 2.25C0.769226 2.00147 0.970698 1.8 1.21923 1.8L8.78077 1.8Z" fill="currentColor"></path>
     <path d="M6.47307 3.6C6.7216 3.6 6.92307 3.80147 6.92307 4.05C6.92307 4.29853 6.7216 4.5 6.47307 4.5L3.52692 4.5C3.27839 4.5 3.07692 4.29853 3.07692 4.05C3.07692 3.80147 3.27839 3.6 3.52692 3.6L6.47307 3.6Z" fill="currentColor"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Folder">
+    <g id="Iconly/Regular/Light/Folder">
+      <g id="Folder">
+        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M21.419 15.7321C21.419 19.3101 19.31 21.4191 15.732 21.4191H7.95C4.363 21.4191 2.25 19.3101 2.25 15.7321V7.93209C2.25 4.35909 3.564 2.25009 7.143 2.25009H9.143C9.861 2.25109 10.537 2.58809 10.967 3.16309L11.88 4.37709C12.312 4.95109 12.988 5.28909 13.706 5.29009H16.536C20.123 5.29009 21.447 7.11609 21.447 10.7671L21.419 15.7321Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Stroke 3" d="M7.4812 14.463H16.2162" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Send">
+    <g id="Iconly/Regular/Light/Send">
+      <g id="Send">
+        <path id="Send_2" d="M15.8325 8.17463L10.109 13.9592L3.59944 9.88767C2.66675 9.30414 2.86077 7.88744 3.91572 7.57893L19.3712 3.05277C20.3373 2.76963 21.2326 3.67283 20.9456 4.642L16.3731 20.0868C16.0598 21.1432 14.6512 21.332 14.0732 20.3953L10.106 13.9602" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Star">
+    <g id="Iconly/Regular/Light/Star">
+      <g id="Star">
+        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M13.1043 4.17701L14.9317 7.82776C15.1108 8.18616 15.4565 8.43467 15.8573 8.49218L19.9453 9.08062C20.9554 9.22644 21.3573 10.4505 20.6263 11.1519L17.6702 13.9924C17.3797 14.2718 17.2474 14.6733 17.3162 15.0676L18.0138 19.0778C18.1856 20.0698 17.1298 20.8267 16.227 20.3574L12.5732 18.4627C12.215 18.2768 11.786 18.2768 11.4268 18.4627L7.773 20.3574C6.87023 20.8267 5.81439 20.0698 5.98724 19.0778L6.68385 15.0676C6.75257 14.6733 6.62033 14.2718 6.32982 13.9924L3.37368 11.1519C2.64272 10.4505 3.04464 9.22644 4.05466 9.08062L8.14265 8.49218C8.54354 8.43467 8.89028 8.18616 9.06937 7.82776L10.8957 4.17701C11.3477 3.27433 12.6523 3.27433 13.1043 4.17701Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Danger">
+    <g id="Iconly/Regular/Light/Danger Circle">
+      <g id="Danger Circle">
+        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 2.75009C17.1081 2.75009 21.2501 6.89109 21.2501 12.0001C21.2501 17.1081 17.1081 21.2501 12.0001 21.2501C6.89112 21.2501 2.75012 17.1081 2.75012 12.0001C2.75012 6.89109 6.89112 2.75009 12.0001 2.75009Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Stroke 3" d="M11.9952 8.20419V12.6232" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Stroke 5" d="M11.995 15.7961H12.005" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Delete">
+    <g id="Iconly/Regular/Light/Delete">
+      <g id="Delete">
+        <path id="Stroke 1" d="M19.325 9.4682C19.325 9.4682 18.782 16.2032 18.467 19.0402C18.317 20.3952 17.48 21.1892 16.109 21.2142C13.5 21.2612 10.888 21.2642 8.28003 21.2092C6.96103 21.1822 6.13803 20.3782 5.99103 19.0472C5.67403 16.1852 5.13403 9.4682 5.13403 9.4682" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Stroke 3" d="M20.7082 6.23969H3.75024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Stroke 5" d="M17.4406 6.23967C16.6556 6.23967 15.9796 5.68467 15.8256 4.91567L15.5826 3.69967C15.4326 3.13867 14.9246 2.75067 14.3456 2.75067H10.1126C9.53358 2.75067 9.02558 3.13867 8.87558 3.69967L8.63258 4.91567C8.47858 5.68467 7.80258 6.23967 7.01758 6.23967" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Ticket">
+    <g id="Iconly/Regular/Light/Ticket">
+      <g id="Ticket">
+        <g id="Group">
+          <path id="Stroke 1" d="M13.8497 4.25031V6.67031" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path id="Stroke 3" d="M13.8497 17.7601V19.7841" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path id="Stroke 6" d="M13.8497 14.3246V9.5036" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M18.7021 20C20.5242 20 22 18.5426 22 16.7431V14.1506C20.7943 14.1506 19.8233 13.1917 19.8233 12.001C19.8233 10.8104 20.7943 9.85039 22 9.85039L21.999 7.25686C21.999 5.45745 20.5221 4 18.7011 4H5.29892C3.47789 4 2.00104 5.45745 2.00104 7.25686L2 9.93485C3.20567 9.93485 4.17668 10.8104 4.17668 12.001C4.17668 13.1917 3.20567 14.1506 2 14.1506V16.7431C2 18.5426 3.4758 20 5.29787 20H18.7021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More">
+    <path d="M12.0129 8.06059V8.05159" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M12.0129 12.0696V12.0606" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M12.0129 16.0786V16.0696" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Filter">
-    <g id="Iconly/Regular/Broken/Filter">
+    <g id="Iconly/Regular/Light/Filter 3">
       <g id="Filter">
-        <path id="Filter 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M9.05688 17.2407C9.05688 17.6389 9.36827 17.9631 9.75167 17.9631C10.1351 17.9631 10.4465 17.6389 10.4465 17.2407V13.6554C10.4465 13.4718 10.3799 13.2956 10.2584 13.1607L4.53177 6.79326C4.44087 6.69206 4.38957 6.55806 4.38957 6.41937V4.99502C4.38957 4.69422 4.62627 4.44777 4.91606 4.44777H7.69611C8.0795 4.44777 8.39089 4.12355 8.39089 3.72436C8.39089 3.32516 8.0795 3 7.69611 3H4.91606C3.85948 3 3 3.8949 3 4.99502V6.41937C3 6.9282 3.1836 7.41173 3.51749 7.78375L9.05688 13.9412V17.2407ZM9.20034 20.5865C9.31823 20.847 9.56933 21 9.83122 21C9.92932 21 10.0292 20.9787 10.1237 20.9333L14.0125 19.0699C14.2564 18.953 14.4139 18.7009 14.4139 18.4218V13.8412L20.4249 7.76064C20.7903 7.39259 21 6.879 21 6.35243V4.97389C21 3.88552 20.1396 3.00018 19.083 3.00018H11.0741C10.6907 3.00018 10.3793 3.32187 10.3793 3.71587C10.3793 4.11172 10.6907 4.43249 11.0741 4.43249H19.083C19.3737 4.43249 19.6095 4.6763 19.6095 4.97389V6.35243C19.6095 6.49612 19.5528 6.63704 19.452 6.73809L13.2323 13.031C13.0991 13.1654 13.0235 13.3499 13.0235 13.5418V17.9648L9.53783 19.6344C9.18954 19.8013 9.03924 20.2268 9.20034 20.5865Z" fill="currentColor"></path>
+        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M4.56517 3C3.70108 3 3 3.71286 3 4.5904V5.52644C3 6.17647 3.24719 6.80158 3.68936 7.27177L8.5351 12.4243L8.53723 12.4211C9.47271 13.3788 9.99905 14.6734 9.99905 16.0233V20.5952C9.99905 20.9007 10.3187 21.0957 10.584 20.9516L13.3436 19.4479C13.7602 19.2204 14.0201 18.7784 14.0201 18.2984V16.0114C14.0201 14.6691 14.539 13.3799 15.466 12.4243L20.3117 7.27177C20.7528 6.80158 21 6.17647 21 5.52644V4.5904C21 3.71286 20.3 3 19.4359 3H4.56517Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </g>
     </g>
   </symbol>
