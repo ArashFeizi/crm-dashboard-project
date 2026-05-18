@@ -32,14 +32,13 @@ html{
     margin-top: auto;
 }
 .app-sidebar > div {
-    padding: 0 var(--space-6);
+    padding: var(--space-3) var(--space-9);
 }
 .sidebar__logo p{
     color: var(--text);
     width: var(--fw-medium);
     font-size: var(--fs-2xl);
-    margin-top: var(--space-5);
-    padding: var(--space-2) 0;
+    margin-top: var(--space-3);
 }
 
 /* icon */
@@ -48,7 +47,6 @@ html{
     width: 20px;
     height: 20px;
 }
-
 .sidebar__item p{
     font-size: var(--fs-md);
 }
@@ -93,11 +91,13 @@ html{
 .avatar-info{
     align-items: center;
 }
-.avatar-info img{
+
+/* Avatar */
+.avatar{
     width: 32px;
     height: 32px;
     object-fit: cover;
-    object-position:center;
+    object-position:top center;
     border-radius: 50%;
 }
 .avatar-info svg{
@@ -173,23 +173,27 @@ html{
   background: var(--text);
   color: white;
 }
-.contact__filters .icon-plus{
+.icon-plus{
     width: 14px;
     height: 14px;
 }
 
-/* 3== contact  nav */
+/* 3== contact email list v2*/
 
 .contact__nav ,
 .contact__nav-list ,
 .contact__nav-item ,
-.contact__nav-icon{
+.contact__nav-icon ,
+.inbox__header ,
+.inbox__header-icon ,
+.inbox__message-item ,
+.content__sort-item{
     align-items: center;
 }
-.contact__nav-item ,
-.contact__nav-label{
+.contact__nav-item{
+    padding:var(--space-6) ;
     color: var(--text-muted);
-    padding:var(--space-2) var(--space-6) var(--space-6) var(--space-6);
+    transition: all 0.2s ease;
 }
 .contact__nav-item p,
 .contact__nav-icon p{
@@ -210,4 +214,70 @@ html{
 .contact__nav-item:hover .badge{
     background: rgba(245, 11, 11, 0.1);
     color: var(--error);
+}
+.contact__inbox {
+    margin: var(--space-9) 0;
+    gap: var(--space-8);
+}
+.inbox__header{
+    gap: var(--space-8);
+    padding-left: var(--space-6);
+}
+.header__icon-left{
+    color: var(--text-muted);
+}
+.inbox__header p{
+    font-size: var(--fs-2xl);
+}
+.inbox__header span{
+    font-size: var(--fs-md);
+    color: var(--text-muted);
+}
+.inbox__message-item{
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-6);
+    color: var(--text-muted);
+}
+.inbox__message-item p{
+    font-size: var(--fs-lg);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inbox__message-item span{
+    color: var(--text);
+}
+.inbox__pagination > .btn{
+    background-color: var(--surface-dark);
+    color: var(--text-muted);
+}
+.inbox__pagination > .btn:hover{
+    color: var(--text);
+}
+.pagination_number button:hover{
+    background-color: var(--text);
+    color: white;
+}
+.contact__inbox{
+    position: relative;
+}
+.content__sort{
+    position: absolute;
+    top: -20px;
+    right: var(--space-9);
+    width: 280px;
+}
+.content__sort .search-box{
+    border: 1px solid var(--border-dark);
+    border-radius: var(--radius-md);
+    align-items: center;
+    padding: 0 var(--space-3);
+}
+.content__sort .btn{
+    width: 100%;
+}
+.content__sort-item p{
+    font-size: var(--fs-md);
+    color: var(--text-muted);
 }
