@@ -28,38 +28,38 @@
             <div class="sidebar__nav">
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#dashboard"></use>
                         </svg> 
                         <span>Dashboard</span>
                     </li>
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#notification"></use>
                         </svg>
                         <span>Notifications</span>
                     </li>
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#note1"></use>
                         </svg>
                         <span>Notes</span>
                     </li>
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#task"></use>
                         </svg>
                         <span>Tasks</span>
                     </li>
                     <li class="sidebar__item u-flex-between">
                         <div class="u-flex u-gap-3">
-                            <svg>
+                            <svg class="icon">
                                 <use href="sprite.svg#email"></use>
                             </svg>
                             <span>Emails</span>
                         </div>
                         <div>
-                            <svg>
+                            <svg class="icon">
                                 <use href="sprite.svg#arrow-up"></use>
                             </svg>
                         </div>
@@ -75,7 +75,7 @@
                         </ol>
                     </li>
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#calendar"></use>
                         </svg>
                         <span>Calendars</span>
@@ -89,19 +89,19 @@
                             <span>DATABASE</span>
                         </li>
                         <li class="sidebar__item">
-                            <svg>
+                            <svg class="icon">
                                 <use href="sprite.svg#analytics"></use>
                             </svg>
                             <span>Analytics</span>
                         </li>
                         <li class="sidebar__item">
-                            <svg>
+                            <svg class="icon">
                                 <use href="sprite.svg#contacts"></use>
                             </svg>
                             <span>Contacts</span>
                         </li>
                         <li class="sidebar__item">
-                            <svg>
+                            <svg class="icon">
                                 <use href="sprite.svg#companies"></use>
                             </svg>
                             <span>Companies</span>
@@ -112,13 +112,13 @@
             <div class="sidebar__Settings">
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#integrations"></use>
                         </svg>
                         <span>Integrations</span>
                     </li>
                     <li class="sidebar__item">
-                        <svg>
+                        <svg class="icon">
                             <use href="sprite.svg#setting"></use>
                         </svg>
                         <span>Settings</span>
@@ -130,16 +130,80 @@
                 <span>M</span>
                 <p>Marketing Teams</p>
                 <div class="u-flex-column">
-                    <svg>
+                    <svg class="icon">
                         <use href="sprite.svg#arrow-up"></use>
                     </svg>
-                    <svg>
+                    <svg class="icon">
                         <use href="sprite.svg#arrow-down"></use>
                     </svg>
                 </div>
             </div>
         </section>
-        <section class="app-content">
+        <section class="app-content u-flex-column">
+            <div class="contact__topbar u-flex-between">
+                <div class="contact__search u-flex">
+                   <div class="search-box u-flex">
+                        <svg class="icon">
+                            <use href="sprite.svg#search"></use>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Search" class="search-box__input">
+                   </div>
+                   <div class="search-icon u-flex u-gap-2">
+                        <div class="u-flex-center">
+                            <svg class="icon">
+                                <use href="sprite.svg#Magnifyinglass"></use>
+                            </svg>
+                        </div>
+                        <div div class="u-flex-center">
+                            <p>F</p>
+                        </div>
+                   </div>
+                </div>
+                <div class="contact__avatar u-flex">
+                    <div class="avatar-help u-flex u-gap-3">
+                        <svg class="icon">
+                            <use href="sprite.svg#QuestionCircle"></use>
+                        </svg>
+                        <p>Help Center</p>
+                    </div>
+                    <div class="avatar-info u-flex-between u-gap-3">
+                        <img src="./assets/img/avatar-email-list-ysmn.jpg" alt="">
+                        <p>Ysmn e.</p>
+                        <svg class="icon">
+                            <use href="sprite.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="contact__filters u-flex-between">
+                <div class="contact__filters-title">
+                    <p>Email</p>
+                </div>
+                <div class="u-flex u-gap-4">
+                    <button class="btn btn--secondary-dark">
+                        <svg class="icon">
+                            <use href="sprite.svg#sort"></use>
+                        </svg>
+                        <span>Sort BY</span>
+                    </button>
+                    <button class="btn btn--secondary-dark">
+                        <svg class="icon">
+                            <use href="sprite.svg#Filter"></use>
+                        </svg>
+                        <span>Filter</span>
+                    </button>
+                    <button class="btn btn--primary-dark">
+                        <svg class="icon">
+                            <use href="sprite.svg#add"></use>
+                        </svg>
+                        <span>Add Mail</span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="contact__nav"></div>
+            <div class="contact__inbox"></div>
         </section>
     </main>
 </body>

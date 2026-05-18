@@ -19,6 +19,7 @@ html{
     flex-direction: row;
     align-items: center;
     gap: var(--space-4);
+    color: var(--text-muted);
 }
 .sidebar__list{
     display: flex;
@@ -37,14 +38,17 @@ html{
     color: var(--text);
     width: var(--fw-medium);
     font-size: var(--fs-2xl);
-    margin-top: var(--space-6);
+    margin-top: var(--space-5);
+    padding: var(--space-2) 0;
 }
-.sidebar__item svg {
+
+/* icon */
+.icon{
+    fill: currentColor;
     width: 20px;
     height: 20px;
-    fill: currentColor;
-    color: var(--text-muted);
 }
+
 .sidebar__item span {
     font-size: var(--fs-md);
     font-weight: var(--fw-medium);
@@ -63,7 +67,7 @@ html{
 .sidebar__footer{
     color: var(--text);
 }
-.sidebar__footer svg{
+.sidebar__footer .icon{
     height: 12px;
     width: 12px;
     stroke: currentColor;
@@ -73,4 +77,106 @@ html{
 }
 .sidebar__footer p{
     font-size: var(--fs-lg);
+}
+
+/* app Content Email list v2 */
+
+
+/* 1== contact topbar */
+.app-content > div{
+    padding: 0 var(--space-9);
+}
+.contact__topbar{
+    margin-top: var(--space-4);
+    align-items: center;
+}
+.contact__avatar{
+    gap: 32px;
+}
+.avatar-info{
+    align-items: center;
+}
+.avatar-info img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 50%;
+}
+.avatar-info svg{
+    width: 16px;
+    height: 16px;
+    color: var(--text);
+}
+.avatar-info p{
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+    color: var(--text);
+}
+.avatar-help{
+    color: var(--text-muted);
+    align-items: center;
+}
+.avatar-help p{
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+}
+.contact__search ,
+.search-box ,
+.search-icon {
+    align-items: center;
+}
+.search-box svg{
+    color: #AFAFAF;
+}
+.search-box input{
+    border: none;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+}
+.search-box input::placeholder{
+    color: #AFAFAF;
+}
+.search-box input:focus {
+    outline: none;            
+}
+.search-icon div{
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+    background-color: var(--surface-dark);
+    padding: 4px;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semiBold);
+}
+.contact__search{
+    border: 1px solid var(--border-dark);
+    border-radius: var(--radius-sm);
+    padding: var(--space-1) var(--space-5);
+}
+
+/* 2== contact  filters */
+
+.contact__filters{
+    align-items: center;
+}
+.contact__filters-title{
+    font-size: var(--fs-3xl);
+}
+
+/* button dark */
+
+.btn--secondary-dark {
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+.btn--primary-dark{
+  background: var(--text);
+  color: white;
+}
+.contact__filters .btn--primary-dark .icon{
+    width: 14px;
+    height: 14px;
 }
